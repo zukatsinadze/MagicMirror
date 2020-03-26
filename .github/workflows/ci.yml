@@ -24,8 +24,14 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+    - run: sudo apt-get install xvfb
     - run: npm ci
-    - run: npm test
+    - name: Start testing
       env:
         CI: true
+        DISPLAY: 99.0
+      run: |
+        xvfb start
+        npm test:unit
+      
 
