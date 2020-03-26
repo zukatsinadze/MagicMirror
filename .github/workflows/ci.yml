@@ -29,9 +29,7 @@ jobs:
     - name: Start testing
       env:
         CI: true
-        DISPLAY: 99.0
       run: |
-        Xvfb :99
-        npm test:unit
+        xvfb-run --auto-servernum npm test:unit
       
 
