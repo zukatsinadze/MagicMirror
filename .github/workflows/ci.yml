@@ -29,10 +29,11 @@ jobs:
     - name: Start testing
       env:
         CI: true
-      run: |
-        xvfb-run --auto-servernum npm run test:e2e
-        xvfb-run --auto-servernum npm run test:unit
-        grunt
+#      run: |
+#        xvfb-run --auto-servernum npm run test:e2e
+#        xvfb-run --auto-servernum npm run test:unit
+       run: |
+#        TODO:         
     - name: Cleanup artifacts
       run: |
         npx rimraf "dist/!(*.exe|*.deb|*.AppImage|*.dmg)"
