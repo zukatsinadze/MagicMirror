@@ -3,8 +3,6 @@
 
 name: Node.js CI
 
-dist: trusty
-
 on:
   push:
     branches: [ master, development-build ]
@@ -36,12 +34,12 @@ jobs:
         xvfb-run --auto-servernum npm run test:unit
     - name: Cleanup artifacts
       run: |
-        npx rimraf "dist/!(*.exe|*.deb|*.AppImage|*.dmg)"
+        npx rimraf "trusty/!(*.exe|*.deb|*.AppImage|*.dmg)"
     - name: Upload artifacts
       uses: actions/upload-artifact@v1
       with:
         name: ubuntu-latest-artifact
-        path: dist
+        path: trusty
     #- name: Release
     #  uses: softprops/action-gh-release@v1
     #  if: startsWith(github.ref, 'refs/tags/')
