@@ -3,6 +3,8 @@
 
 name: Node.js CI
 
+dist: trusty
+
 on:
   push:
     branches: [ master, development-build ]
