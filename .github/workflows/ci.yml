@@ -33,10 +33,12 @@ jobs:
 #       xvfb-run --auto-servernum npm run test:e2e
 #       xvfb-run --auto-servernum npm run test:unit
       run: |
-#        TODO:         
+        grunt        
     - name: Cleanup artifacts
       run: |
         npx rimraf "dist/!(*.exe|*.deb|*.AppImage|*.dmg)"
+        npm run release
+
     - name: Upload artifacts
       uses: actions/upload-artifact@v1
       with:
@@ -49,6 +51,4 @@ jobs:
     #    files: "dist/**"
     #  env:
     #    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      
 
