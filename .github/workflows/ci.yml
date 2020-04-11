@@ -38,7 +38,7 @@ jobs:
     - name: Upload artifacts
       uses: actions/upload-artifact@v1
       with:
-        name: ${{ matrix.os }}
+        name: ubuntu-latest-artifact
         path: dist
     #- name: Release
     #  uses: softprops/action-gh-release@v1
