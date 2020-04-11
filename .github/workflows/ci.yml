@@ -32,7 +32,6 @@ jobs:
       run: |
         xvfb-run --auto-servernum npm run test:e2e
         xvfb-run --auto-servernum npm run test:unit
-      run: |
         grunt        
     - name: Cleanup artifacts
       run: |
