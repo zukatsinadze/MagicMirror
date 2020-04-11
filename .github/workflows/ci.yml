@@ -38,7 +38,7 @@ jobs:
     - name: Cleanup artifacts
       run: |
         npx rimraf "dist/!(*.exe|*.deb|*.AppImage|*.dmg)"
-        npm release
+        npm run release
     - name: Upload artifacts
       uses: actions/upload-artifact@v1
       with:
