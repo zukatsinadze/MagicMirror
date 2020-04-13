@@ -5,7 +5,7 @@
   "main": "js/electron.js",
   "scripts": {
     "start": "./run-start.sh",
-    "install": "cd vendor && npm install",
+    "install": "cp -a ./modules/SnowWhite/MMM-* ./modules/ 2>/dev/null || : && cd vendor && npm install",
     "install-fonts": "cd fonts && npm install",
     "postinstall": "sh untrack-css.sh && sh installers/postinstall/postinstall.sh && npm run install-fonts",
     "test": "NODE_ENV=test ./node_modules/mocha/bin/mocha tests --recursive",
