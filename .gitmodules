@@ -1,3 +1,6 @@
+# pull all changes for the submodules
+#   git submodule update --remote
 [submodule "modules/SnowWhite"]
 	path = modules/SnowWhite
 	url = https://github.com/YeetCodes/SnowWhite
+        # branch = development-build
