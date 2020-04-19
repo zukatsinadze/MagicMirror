@@ -61,6 +61,7 @@ Temporary Items
 
 # Ignore all modules except the default modules.
 /modules/**
+!/modules/SnowWhite/**
 !/modules/default
 !/modules/default/**
 !/modules/README.md**
