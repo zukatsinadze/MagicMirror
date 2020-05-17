@@ -36,7 +36,7 @@ var config = {
 		},
 		{
 			module: "MMM-CurrencyRate",
-			position: 'bottom_left',
+			position: 'top_right',
 			config: {
 					apiKEY: "36964faae897ef420e6c587d8f5e5aaf", // fixer.io
 					base: "GBP",                    // USD unless you upgrade from free account
@@ -53,7 +53,7 @@ var config = {
 		},
 		{
 			 module: "currentweather",
-			 position: "top_right",
+			 position: "top_left",
 			 config: {
 				 location: "",
 				 locationID: "3054643", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
