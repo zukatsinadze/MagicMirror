@@ -36,7 +36,7 @@ var config = {
 		},
 		{
 			module: "MMM-CurrencyRate",
-			position: 'top_left',
+			position: 'bottom_left',
 			config: {
 					apiKEY: "36964faae897ef420e6c587d8f5e5aaf", // fixer.io
 					base: "GBP",                    // USD unless you upgrade from free account
@@ -49,43 +49,36 @@ var config = {
 		},
 		{
 			module: "MMM-Demotivational",
-			position: "lower_third"
+			position: "bottom_bar"
 		},
 		{
-			module: "currentweather",
-			position: "top_right",
-			config: {
-				location: "Budapest",
-				locationID: "",  //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
-				appid: "YOUR_OPENWEATHER_API_KEY"
-			}
-		},
-		{
-			module: "weatherforecast",
-			position: "top_right",
-			header: "Weather Forecast",
-			config: {
-				location: "Budapest",
-				locationID: "5128581",  //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
-				appid: "YOUR_OPENWEATHER_API_KEY"
-			}
-		},
-		{
-			module: "newsfeed",
-			position: "bottom_bar",
-			config: {
-				feeds: [
-					{
-						title: "New York Times",
-						url: "http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml"
-					}
-				],
-				showSourceTitle: true,
-				showPublishDate: true,
-				broadcastNewsFeeds: true,
-				broadcastNewsUpdates: true
-			}
-		},
+			 module: "currentweather",
+			 position: "top_right",
+			 config: {
+				 location: "",
+				 locationID: "3054643", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
+				 appid: "85fdf627c3e5cf437a25ff37a9dddc02"
+				 }
+		 },
+		 {
+			 module: "MMM-Yang",
+			 position: "top_left",
+			 config: {
+				 // Transparency of the picture.
+				 opacity: 1.0,
+				 // Maximum width of the picture.
+				 maxWidth: "100%",
+				 // Maximum height of the picture.
+				 maxHeight: "100%",
+				 // Border-Radius of the picture.
+				 borderRadius: "10%",
+				 yourName: "Hi, Cutie! ",
+				 // Add some random text to show.
+				 randomText: "",
+				 // Compliments
+				 }
+		 }
+
 	]
 };
 
