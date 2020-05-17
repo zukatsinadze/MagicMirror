@@ -57,9 +57,28 @@ var config = {
 			config: {
 				location: "Budapest",
 				locationID: "",  //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
-				appid: "YOUR_OPENWEATHER_API_KEY"
+				appid: "85fdf627c3e5cf437a25ff37a9dddc"
 			}
 		},
+			{
+			module: "MMM-Yang",
+			position: "top_left",
+			config: {
+				// Transparency of the picture.
+				opacity: 1.0,
+				// Maximum width of the picture.
+				maxWidth: "100%",
+				// Maximum height of the picture.
+				maxHeight: "100%",
+				// Border-Radius of the picture.
+				borderRadius: "10%",
+				yourName: "Hi, Cutie! ",
+				// Add some random text to show.
+				randomText: "",
+				// Compliments
+			}
+		},
+
 		{
 			module: "weatherforecast",
 			position: "top_right",
