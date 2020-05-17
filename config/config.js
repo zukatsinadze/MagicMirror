@@ -35,7 +35,7 @@ var config = {
 			module: "alert",
 		},
 		{
-			module: "updatenotification",
+			module: "MMM-CurrencyRate",
 			position: "top_bar"
 		},
 		{
@@ -43,7 +43,7 @@ var config = {
 			position: "top_left"
 		},
 		{
-			module: "compliments",
+			module: "MMM-Demotivational",
 			position: "lower_third"
 		},
 		{
