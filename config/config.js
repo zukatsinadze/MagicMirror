@@ -49,7 +49,7 @@ var config = {
 		},
 		{
 			module: "MMM-Demotivational",
-			position: "lower_third"
+			position: "bottom_bar"
 		},
 		{
 			module: "currentweather",
