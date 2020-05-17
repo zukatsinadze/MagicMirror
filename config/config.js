@@ -35,15 +35,20 @@ var config = {
 			module: "alert",
 		},
 		{
-			module: "updatenotification",
-			position: "top_bar"
+			module: "MMM-CurrencyRate",
+			position: 'top_left',
+			config: {
+					apiKEY: "36964faae897ef420e6c587d8f5e5aaf", // fixer.io
+					base: "GBP",                    // USD unless you upgrade from free account
+					symbols: "USD,AUD,CAD,PLN,MXN"  // can't change unless you upgrade from free account
+				}
 		},
 		{
 			module: "clock",
 			position: "top_left"
 		},
 		{
-			module: "compliments",
+			module: "MMM-Demotivational",
 			position: "lower_third"
 		},
 		{

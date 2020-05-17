@@ -1,3 +1,5 @@
+# Please Start the Magic Mirror via the Start-Here.sh shell script.
+
 ![MagicMirror²: The open source modular smart mirror platform. ](.github/header.png)
 [![Node.js CI](https://github.com/YeetCodes/MagicMirror/workflows/Node.js%20CI/badge.svg?branch=development-build)](https://github.com/YeetCodes/MagicMirror/actions)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](http://choosealicense.com/licenses/mit)
