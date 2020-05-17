@@ -36,7 +36,7 @@ var config = {
 		},
 		{
 			module: "MMM-CurrencyRate",
-			position: 'top_left',
+			position: 'top_right',
 			config: {
 					apiKEY: "36964faae897ef420e6c587d8f5e5aaf", // fixer.io
 					base: "GBP",                    // USD unless you upgrade from free account
@@ -53,7 +53,7 @@ var config = {
 		},
 		{
 			module: "currentweather",
-			position: "top_right",
+			position: "bottom_right",
 			config: {
 				location: "Budapest",
 				locationID: "",  //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
@@ -79,32 +79,7 @@ var config = {
 			}
 		},
 
-		{
-			module: "weatherforecast",
-			position: "top_right",
-			header: "Weather Forecast",
-			config: {
-				location: "Budapest",
-				locationID: "5128581",  //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
-				appid: "YOUR_OPENWEATHER_API_KEY"
-			}
-		},
-		{
-			module: "newsfeed",
-			position: "bottom_bar",
-			config: {
-				feeds: [
-					{
-						title: "New York Times",
-						url: "http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml"
-					}
-				],
-				showSourceTitle: true,
-				showPublishDate: true,
-				broadcastNewsFeeds: true,
-				broadcastNewsUpdates: true
-			}
-		},
+
 	]
 };
 
