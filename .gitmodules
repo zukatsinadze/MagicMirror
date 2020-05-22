@@ -3,4 +3,4 @@
 [submodule "modules/SnowWhite"]
 	path = modules/SnowWhite
 	url = https://github.com/YeetCodes/SnowWhite
-        # branch = development-build
+  branch = development-build
